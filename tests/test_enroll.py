@@ -1,5 +1,5 @@
 """No repair job, no enrollment. The lock blocks turn-on."""
-from src.application.enroll import (
+from platforms.loadclear.src.application.enroll import (
     EnrollStore,
     MissingReceipt,
     attach_stream,
@@ -7,7 +7,7 @@ from src.application.enroll import (
     enroll_from_bayline,
     try_arm,
 )
-from src.application.refuse import DispatchRefused
+from platforms.loadclear.src.application.refuse import DispatchRefused
 
 
 def test_enroll_requires_work_order():

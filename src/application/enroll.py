@@ -5,7 +5,7 @@ No repair job, no enrollment. A second enrollment of the same charger reopens th
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from src.application.refuse import AssetOffer, DispatchInstruction, evaluate
+from platforms.loadclear.src.application.refuse import AssetOffer, DispatchInstruction, evaluate
 
 
 class EnrollError(Exception):
